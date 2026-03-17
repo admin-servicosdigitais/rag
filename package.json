@@ -1,0 +1,22 @@
+{
+  "name": "bedrock-rag-bootstrap",
+  "version": "1.0.0",
+  "description": "Automação de criação de agente Bedrock + Knowledge Base com teste RAG",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/main.js",
+    "dev": "tsx src/main.ts",
+    "check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@aws-sdk/client-bedrock-agent": "^3.883.0",
+    "@aws-sdk/client-bedrock-agent-runtime": "^3.883.0",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.9",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.3"
+  }
+}
